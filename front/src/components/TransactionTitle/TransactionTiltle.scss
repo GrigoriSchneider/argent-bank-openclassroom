@@ -1,0 +1,34 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/base";
+
+.titleSection {
+  border: 1px solid black;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.titleSection-content-wrapper {
+  width: 100%;
+  flex: 1;
+}
+
+.titleSection-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.titleSection-amount {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.titleSection-amount-description {
+  margin: 0;
+}

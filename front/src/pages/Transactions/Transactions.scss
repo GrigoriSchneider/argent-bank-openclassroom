@@ -1,0 +1,33 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/base";
+
+
+.transac {
+  padding: 5% 0 7% 0;
+}
+
+#transpage {
+  color: white;
+  padding: 150px 0 40px 0;
+}
+
+.dataHead {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 25px;
+  font-weight: bold;
+  margin: 0 auto;
+  color: white;
+}
+
+.dataLineItem {
+  font-size: 1rem;
+  @include mobile {
+    font-size: 0.8rem;  
+  }
+  @include tablet {
+    font-size: 1rem;  
+  }
+}

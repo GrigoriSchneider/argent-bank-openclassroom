@@ -1,0 +1,47 @@
+/*responsives*/
+
+  @mixin mobile {
+    @media screen and (min-width: map-get($breakpoints, mobile-min)) {
+      @content;
+    }
+  }
+
+
+  @mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, tablet-min)) {
+      @content;
+    }
+  }
+  
+  
+  @mixin laptop {
+    @media screen and (min-width: map-get($breakpoints, laptop-min)) {
+      @content;
+    }
+  }
+
+  @mixin laptop2 {
+    @media screen and (min-width: map-get($breakpoints, laptop)) {
+      @content;
+    }
+  }
+
+  @mixin laptop3 {
+    @media screen and (min-width: map-get($breakpoints, laptop-xl)) {
+      @content;
+    }
+  }
+  
+  @mixin laptop4 {
+    @media screen and (min-width: map-get($breakpoints, laptop-xxl)) {
+      @content;
+    }
+  }
+    
+
+  @mixin laptop5 {
+    @media screen and (min-width: map-get($breakpoints, laptop-xxxl)) {
+      @content;
+    }
+  }
+  

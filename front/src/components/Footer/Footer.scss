@@ -1,0 +1,13 @@
+@import "../../sass/variables";
+
+.footer {
+	display: flex;
+	justify-content: center;
+	border-top: 2px solid $color-9;
+	padding: 2rem 0 1.5rem;
+}
+
+.footer-text {
+	margin: 0;
+	padding: 0;
+}

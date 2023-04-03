@@ -1,0 +1,54 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.error-page {
+    margin: auto;
+    color: $color-7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 170px;
+    margin-left: 200px;
+    gap: 10px;
+    height: 600px;
+
+    @include laptop {
+        margin-left: 150px;
+    }
+
+    @include mobile {
+        margin-left: 10px;
+    }
+
+    .error-code {
+        font-size: 150px;
+        font-weight: 500;
+        line-height: 211px;
+
+        @include mobile {
+            font-size: 120px;
+        }
+    }
+
+    .error-text {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51px;
+
+        @include laptop {
+            font-size: 28px;
+        }
+
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+
+    a {
+        color: $color-7;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 26px;
+        margin-top: 50px;
+    }
+}

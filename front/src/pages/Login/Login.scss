@@ -1,0 +1,55 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/base";
+
+
+.error_login {
+    color: $color-7;
+}
+
+.bg-dark {
+    background-color: $color-8;
+    padding: 1.5rem 6rem 10rem 6rem;
+
+    @include mobile {
+        padding: 1.5rem 0rem 10rem 0rem;
+    }
+}
+
+.sign-in-content {
+    box-sizing: border-box;
+    background-color: $color-2;
+    width: 300px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.sign-in-button {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.input-remember {
+    display: flex;
+
+    label {
+        margin-left: 0.25rem;
+    }
+}
+
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1rem;
+
+    label {
+        font-weight: bold;
+    }
+
+    input {
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+}

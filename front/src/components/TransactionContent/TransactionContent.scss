@@ -1,0 +1,90 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.dataLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $color-2;
+  width: 90%;
+  height: 90px;
+  color: $color-1;
+  border: 1px $color-1 solid;
+  margin: 0 auto -10px auto;
+  padding-right: 20px;
+  padding-left: 10px;
+
+}
+
+#arrow {
+  width: 5%;
+}
+
+#arrow:hover,
+.pencil:hover {
+  cursor: pointer;
+}
+
+#date {
+  width: 25%;
+}
+
+#descr {
+  width: 30%;
+}
+
+#amount,
+#balance {
+  width: 20%;
+}
+
+.moreInfo {
+  display: block;
+  background: white;
+  color: black;
+  text-align: left;
+  padding-right: 20px;
+  padding-left: 10px;
+  margin: 0 auto -10px auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  width: 90%;
+  overflow: hidden;
+  color: black;
+  -webkit-animation-name: collapse;
+  animation-name: collapse;
+  -webkit-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+
+.info {
+  margin-left: 10%;
+
+  @include mobile {
+    margin-left: 8%;
+  }
+
+  @include tablet {
+    margin-left: 9%;
+  }
+
+  @include laptop {
+    margin-left: 10%;
+  }
+
+  @include laptop2 {
+    margin-left: 11%;
+  }
+
+  @include laptop3 {
+    margin-left: 12%;
+  }
+
+  @include laptop4 {
+    margin-left: 14%;
+  }
+
+  @include laptop5 {
+    margin-left: 15%;
+  }
+}

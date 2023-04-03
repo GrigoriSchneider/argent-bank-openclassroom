@@ -1,0 +1,54 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/base";
+
+.header {
+  color: $color-2;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.editor {
+  display: flex;
+  justify-content: center;
+
+  input {
+    padding: 5px;
+    margin: 5px;
+    width: 15vw;
+  }
+
+  button {
+    padding: 5px;
+    margin: 5px;
+    //width: 8vw;
+    border: $color-6 1px solid;
+    background-color: $color-2 ;
+    color: $color-6;
+    font-size: 1rem;
+    font-weight: bold;
+
+    @include mobile {
+      width: 15vw;
+    }
+
+    @include tablet {
+      width: 11vw;
+    }
+
+    @include laptop {
+      width: 8vw;
+    }
+  }
+}
+
+.edit-button {
+  font-size: 0.9rem;
+
+}
